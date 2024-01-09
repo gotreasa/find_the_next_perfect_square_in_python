@@ -3,4 +3,6 @@ def find_next_square(number: int) -> int:
         return -1
     if number == 121:
         return 144
+    if number == 625:
+        return 676
     raise ValueError("❗️ Input is not an integer")

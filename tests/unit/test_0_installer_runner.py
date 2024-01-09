@@ -19,3 +19,7 @@ def describe_find_next_square():
     def should_give_negative_1_when_input_is_122():
         """🧪 should give -1 when the input is 122"""
         assert find_next_perfect_square.find_next_square(122) == -1
+
+    def should_give_676_when_input_is_625():
+        """🧪 should give 676 when the input is 625"""
+        assert find_next_perfect_square.find_next_square(625) == 676
