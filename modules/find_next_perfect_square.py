@@ -1,8 +1,11 @@
+import math
+
+
 def find_next_square(number: int) -> int:
-    if number in [5, 122]:
-        return -1
-    if number == 121:
-        return 144
-    if number == 625:
-        return 676
-    raise ValueError("❗️ Input is not an integer")
+    if not isinstance(number, int):
+        raise ValueError("❗️ Input is not an integer")
+    square_root = math.sqrt(number)
+
+    if square_root % 1 == 0:
+        return (square_root + 1) ** 2
+    return -1
