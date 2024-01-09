@@ -1,2 +1,2 @@
-def print_the_title():
-    print("😊 Welcome to Dummy Kata")
+def find_next_square(number: int) -> int:
+    raise ValueError("❗️ Input is not an integer")
